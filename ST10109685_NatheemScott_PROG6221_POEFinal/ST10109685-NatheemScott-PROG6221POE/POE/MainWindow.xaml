@@ -1,0 +1,29 @@
+﻿<Window x:Class="POE.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POE"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="750" Width="1000" Background="#FFFFA400">
+    <Grid Background="#FFD4F3B7">
+        <Rectangle HorizontalAlignment="Left" Height="734" Stroke="Black" VerticalAlignment="Center" Width="320" Fill="#FF36454F"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="151" Margin="0,10,0,0" VerticalAlignment="Top" Width="320">
+            <Label Content="ST10109685 Recipe App" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0" FontFamily="Arial" FontSize ="25" Foreground="#FFE5FB1A"/>
+        </Border>
+        <Button x:Name="btnAdd" Content="Add Recipe" HorizontalAlignment="Left" Margin="65,182,0,0" VerticalAlignment="Top" Height="36" Width="221" FontFamily="Arial" FontSize ="25" Background="#FF36454F" Foreground="#FFE5FB1A" Click="btnAdd_Click" BorderBrush="Black"/>
+        <ListBox x:Name="lstboxAllRecipes" Margin="359,10,47,106" Background="#FFD4F3B7" BorderBrush="Black" SelectionMode="Multiple">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" TextWrapping="Wrap"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button x:Name="btnDisplayAll" Content="Display all Recipes" HorizontalAlignment="Left" Margin="65,242,0,0" VerticalAlignment="Top" Height="36" Width="221" FontFamily="Arial" FontSize ="25" Background="#FF36454F" Foreground="#FFE5FB1A" Click="btnDisplayAll_Click" BorderBrush="Black"/>
+        <Button x:Name="btnDisplaySpecific" Content="Display Specific" HorizontalAlignment="Left" Margin="65,301,0,0" VerticalAlignment="Top" Height="36" Width="221" FontFamily="Arial" FontSize ="25" Background="#FF36454F" Foreground="#FFE5FB1A" Click="btnDisplaySpecific_Click" BorderBrush="Black"/>
+        <Button x:Name="btnScale" HorizontalAlignment="Left" Margin="65,367,0,0" VerticalAlignment="Top" Height="36" Width="221" FontFamily="Arial" FontSize ="25" Background="#FF36454F" Foreground="#FFE5FB1A" Click="btnScale_Click" BorderBrush="Black" Content="Scale a Recipe"/>
+        <Button x:Name="btnClear" Content="Clear All Recipes" HorizontalAlignment="Left" Margin="65,566,0,0" VerticalAlignment="Top" Height="36" Width="221" FontFamily="Arial" FontSize ="25" Background="#FF36454F" Foreground="#FFE5FB1A" Click="btnClear_Click" BorderBrush="Black"/>
+        <Button x:Name="btnPie" Content="Pie Chart" HorizontalAlignment="Left" Margin="65,498,0,0" VerticalAlignment="Top" Height="36" Width="221" FontFamily="Arial" FontSize ="25" Background="#FF36454F" Foreground="#FFE5FB1A" Click="btnPie_Click" BorderBrush="Black"/>
+        <Button x:Name="btnReset" Content="Reset Recipe" HorizontalAlignment="Left" Margin="65,432,0,0" VerticalAlignment="Top" Height="36" Width="221" FontFamily="Arial" FontSize ="25" Background="#FF36454F" Foreground="#FFE5FB1A" Click="btnReset_Click" BorderBrush="Black"/>
+    </Grid>
+</Window>

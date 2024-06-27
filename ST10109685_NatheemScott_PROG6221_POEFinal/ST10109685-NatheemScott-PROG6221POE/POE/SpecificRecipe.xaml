@@ -1,0 +1,15 @@
+﻿<Window x:Class="POE.SpecificRecipe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POE"
+        mc:Ignorable="d"
+        Title="SpecificRecipe" Height="450" Width="800">
+    <Grid Background="#FF36454F">
+        <Label Content="Please Enter the Name of the Recipe:" HorizontalAlignment="Left" Margin="46,40,0,0" VerticalAlignment="Top" Background="#FF36454F" Foreground="White"/>
+        <TextBox x:Name="txtSearchRecipe" HorizontalAlignment="Left" Margin="280,48,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnSearchRecipe" Content="Search" HorizontalAlignment="Left" Margin="127,86,0,0" VerticalAlignment="Top" Height="35" Width="124" Click="btnSearchRecipe_Click"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="280,86,0,0" VerticalAlignment="Top" Height="35" Width="124" Click="btnCancel_Click"/>
+    </Grid>
+</Window>
